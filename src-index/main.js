@@ -1,8 +1,8 @@
 const fs = require('fs');
 
-const sha = 1;
+const sha = process.env.GITHUB_SHA;
 const environment =  "test";
-const url = 'https://my-bucket-url' ;
+const url = 'https://bekk-tf-assets.s3.amazonaws.com' ;
 const date = new Date().toISOString();
 
 const index = `<!doctype html>
