@@ -31,7 +31,7 @@ jobs:
         name: build-${{github.sha}}
     - name: Echo build files
       run: |
-        ls build-${{github.sha}}
+        cd build-${{github.sha}}
         cat main.js
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
